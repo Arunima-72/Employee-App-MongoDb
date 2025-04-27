@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+
+<body>
+  
+  <nav class="navbaremp navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <img src="/images/incorporation.png" alt="Employer App Logo" style="height: 80px;">
+        <a class="navbar-brand" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: x-large;">Employee App</a>
+    
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <% for(let i=0; i<nav.length; i++) { %>
+            <li class="nav-item">
+              <a class="nav-link active" href="<%= nav[i].link %>"><%= nav[i].name %></a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container py-5">
+    <div class="row align-items-center justify-content-center">
+     
+
+      <div class="col-md-6 text-center mb-0 mb-md-0">
+        <h2 style="text-align: justify; display: inline; font-family: Georgia, 'Times New Roman', Times, serif;font-style: normal;">Welcome New Talent with Precision</h2>
+        <p  style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-style: italic;">
+          Maintain accurate and up-to-date employee records.
+        </p>
+            
+        <img src="/images/18940.jpg" alt="Employee Illustration" class="img-fluid rounded pastel-shadow" style="max-height: 400px; width: 600px;">
+      </div>
+
+        
+
+
+      <div class="col-md-6" >
+        <div class="card pastel-card p-4" style="width: 70%; max-width: 400px; margin-left: 30%;">
+          <h4 class="mb-4 text-center ">Add New Employee</h4>
+          <form method="post" action="/basic/addEmployee">
+            <div class="mb-2">
+              <label class="form-label">Employee Name</label>
+              <input type="text" class="form-control" name="employeeName" placeholder="Enter employee name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Designation</label>
+              <input type="text" class="form-control" name="employeeDesignation" placeholder="Enter designation" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Location</label>
+              <input type="text" class="form-control" name="employeeLocation" placeholder="Enter location" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Salary</label>
+              <input type="text" class="form-control" name="employeeSalary" placeholder="Enter salary" required>
+            </div>
+
+           
+
+            <button type="submit" class="btn btn-light w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+     
+</body>
+
+  
+</html>

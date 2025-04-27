@@ -1,0 +1,39 @@
+
+/* Pastel Table Styles */
+.pastel-table thead {
+    background-color: #d7e0f8; /* Light pink pastel */
+    color: #333;
+  }
+  
+  .pastel-table tbody tr:nth-child(even) {
+    background-color: #f6f3fe; /* Soft peach */
+  }
+  
+  .pastel-table tbody tr:nth-child(odd) {
+    background-color: #fdfdfd; /* Very light gray */
+  }
+  
+  .btn-primary {
+    background-color: #ffe599; /* Pastel yellow */
+    color: #000;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #f4cccc; /* Pastel red */
+    color: #000;
+    border: none;
+  }
+.navbar{
+  background-color:#abc7fd;
+}
+.navbaremp{
+  background-color: #abc7fd ;
+}
+.btn{
+  background-color: #98b4ec;
+
+}
+.navbarupdate{
+  background-color:#abc7fd ;
+}
